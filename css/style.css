@@ -1,0 +1,19 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+.body {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(239, 227, 230, 0.786);
+  font-family: "Lato", sans-serif;
+  word-break: break-word;
+  line-height: 1.5;
+}
