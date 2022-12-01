@@ -11,7 +11,7 @@
     render();
   };
 
-  const formReset = () => {
+  const resetForm = () => {
     document.querySelector(".js-form").reset();
   };
 
@@ -78,7 +78,7 @@
 
     addNewTask(newTaskContent);
 
-    formReset();
+    resetForm();
   };
 
   const init = () => {

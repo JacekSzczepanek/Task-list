@@ -2,7 +2,7 @@
   background-color: white;
   padding: 15px 20px;
   margin: 0 0 1px;
-  box-shadow: 1px 1px 10px 0px #ccc;
+  box-shadow: 1px 1px 10px 0 #ccc;
   font-size: 20px;
 }
 
@@ -10,7 +10,7 @@
   background-color: white;
   padding: 20px;
   margin-bottom: 10px;
-  box-shadow: 1px 1px 10px 0px #ccc;
+  box-shadow: 1px 1px 10px 0 #ccc;
   display: grid;
   grid-template-columns: 1fr 120px;
   grid-gap: 20px;
@@ -34,6 +34,7 @@
   color: white;
   padding: 10px;
   font-size: 15px;
+  border: none;
 }
 
 .form__button:active {
