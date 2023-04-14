@@ -1,12 +1,14 @@
 {
-  const tasks = [];
+  let tasks = [];
+
+  let tassDoneHidden = false;
 
   const setInputFocus = () => {
     document.querySelector(".js-newTask").focus();
   };
 
   const addNewTask = (newTaskContent) => {
-    tasks.push({ content: newTaskContent });
+    tasks = [...tasks, { content: newTaskContent }];
 
     render();
   };
@@ -16,14 +18,20 @@
   };
 
   const toggleTaskDone = (index) => {
-    tasks[index].done = !tasks[index].done;
+    tasks = [
+      ...tasks.slice(0, index),
+      {
+        ...tasks[index],
+        done: !tasks[index].done,
+      },
+      ...tasks.slice(index + 1),
+    ];
 
     render();
   };
 
   const removeTask = (index) => {
-    tasks.splice(index, 1);
-
+    tasks = [...tasks.slice(0, index), ...tasks.slice(index + 1)];
     render();
   };
 
