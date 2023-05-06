@@ -3,14 +3,26 @@
   background: white;
   box-shadow: 0 0 5px #ddd;
 }
-
-.section__header {
-  font-size: 20px;
-  padding: 20px;
+.section__title {
+  font-size: 1.2em;
   margin: 0;
-  border-bottom: solid 1px #ddd;
+}
+.section__header {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin: 0;
+  border-bottom: solid 1px #e5e2e2;
 }
 
+@media (max-width: 767px) {
+  .section__header {
+    grid-template-columns: 1fr;
+  }
+}
 .section_body {
   padding: 20px;
 }

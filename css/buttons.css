@@ -1,7 +1,5 @@
 .buttons {
   margin: auto 0;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .buttons__button {
