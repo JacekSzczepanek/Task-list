@@ -11,7 +11,7 @@
 }
 
 .form_newTask {
-  border: 1px #607d8b;
+  border: 5px #607d8b;
   height: 35px;
   width: 100%;
 }
@@ -22,6 +22,7 @@
   border: none;
   transition: 1s;
   cursor: pointer;
+  padding: 10px;
 }
 
 .form_button:hover {
